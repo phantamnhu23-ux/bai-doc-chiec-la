@@ -1,10 +1,6 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    /* Dùng hình nền hoa xanh lá bạn vừa cung cấp */
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-color: #f4f9f6; /* Màu nền xanh lá nhạt nhẹ nhàng, sạch sẽ */
     color: #333;
     margin: 0;
     padding: 20px;
