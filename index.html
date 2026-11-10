@@ -7,73 +7,165 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="icons">🌸 🍃 ☀️ 🎈</div>
+    <!-- BANNER TIÊU ĐỀ -->
+    <header class="main-header">
+        <div class="decor-icons">🌸 🍃 ☀️ 🎈</div>
         <h1>BÀI ĐỌC MỞ RỘNG</h1>
-        <div class="subtitle">LỚP 2 - GÓC HỌC TẬP THÚ VỊ</div>
+        <div class="grade-badge">LỚP 2</div>
     </header>
 
-    <div class="stats-bar">
-        <div class="stat-item">⭐ Điểm số tối đa: <span>10 điểm</span></div>
-        <div class="stat-item">🌸 Phần thưởng hoa: <span class="flower-badge">Sẵn sàng</span></div>
-        <div class="stat-item">📖 Trạng thái: <span class="status">Đang học</span></div>
+    <!-- THANH THỐNG KÊ ĐIỂM SỐ -->
+    <div class="status-board">
+        <div class="status-item">
+            <span class="icon">⭐</span> Bài tập chính thức: <b id="official-score">0</b> / 10 điểm lá
+        </div>
+        <div class="status-item">
+            <span class="icon">🎁</span> Phần thưởng hoa: <b id="flower-status">Chưa tặng</b>
+        </div>
+        <div class="status-item">
+            <span class="icon">🚩</span> Trạng thái bài học: <b id="lesson-status">Chưa hoàn thành</b>
+        </div>
     </div>
 
-    <div class="main-container">
-        <!-- PHẦN BÀI ĐỌC -->
-        <div class="lesson-card">
-            <div class="audio-section">
-                <p>🔊 Nghe giọng đọc bài:</p>
+    <!-- KHU VỰC BÀI ĐỌC VÀ BÀI TẬP -->
+    <div class="content-wrapper">
+        <!-- CỘT BÊN TRÁI: BÀI ĐỌC & NGHE AUDIO -->
+        <div class="left-column">
+            <div class="audio-btn-box">
+                <p>🔊 BẤM ĐỂ NGHE BÀI ĐỌC</p>
                 <audio controls src="Bài đọc 1 .wav"></audio>
             </div>
 
-            <div class="illustration">
-                <img src="1. chim tò mò.png" alt="Chim sâu và chiếc lá" class="story-img">
-            </div>
-
-            <div class="story-text">
+            <div class="story-box">
                 <h2>Bài đọc 1: Chiếc lá</h2>
-                <p><strong>Chim sâu hỏi chiếc lá:</strong></p>
-                <p>– Lá ơi! Hãy kể chuyện cuộc đời bạn cho tôi nghe đi!</p>
-                <p>– Bình thường lắm, chẳng có gì đáng kể đâu.</p>
-                <p>– Bạn đừng có giấu! Nếu bình thường vậy, sao bông hoa kia lại có vẻ rất biết ơn bạn?</p>
-                <p>– Thật mà! Cuộc đời tôi rất bình thường. Ngày nhỏ, tôi là một búp non. Tôi lớn dần lên thành một chiếc lá và cứ là chiếc lá như thế cho đến bây giờ.</p>
-                <p>– Thật như thế sao? Đã có lần nào bạn biến thành hoa, thành quả, thành một ngôi sao, thành vầng Mặt Trời đem lại niềm vui cho mọi người như trong các câu chuyện cổ tích mà bác gió thường rì rầm kể suốt ngày đêm chưa?</p>
-                <p>– Chưa! Chưa một lần nào tôi biến thành một thứ gì khác tôi cả. Suốt đời tôi chỉ là một chiếc lá nhỏ nhoi bình thường.</p>
-                <p>– Thế thì chán thật! Bông hoa kia đã làm tôi thất vọng. Hoa ơi, bạn chỉ khéo bịa chuyện.</p>
-                <p>– Tôi không bịa chút nào đâu. Mãi mãi tôi kính trọng những chiếc lá bình thường như thế. Chính nhờ họ mới có chúng tôi – những hoa, những quả, những niềm vui mà bạn vừa nói đến.</p>
-                <p class="author">Theo TRẦN HOÀI DƯƠNG</p>
+                <div class="story-text">
+                    <p>Chim sâu hỏi chiếc lá:</p>
+                    <p>– Lá ơi! Hãy kể chuyện cuộc đời bạn cho tôi nghe đi!</p>
+                    <p>– Bình thường lắm, chẳng có gì đáng kể đâu.</p>
+                    <p>– Bạn đừng có giấu! Nếu bình thường vậy, sao bông hoa kia lại có vẻ rất biết ơn bạn?</p>
+                    <p>– Thật mà! Cuộc đời tôi rất bình thường. Ngày nhỏ, tôi là một búp non. Tôi lớn dần lên thành một chiếc lá và cứ là chiếc lá như thế cho đến bây giờ.</p>
+                    <p>– Thật như thế sao? Đã có lần nào bạn biến thành hoa, thành quả, thành một ngôi sao, thành vầng Mặt Trời đem lại niềm vui cho mọi người như trong các câu chuyện cổ tích mà bác gió thường rì rầm kể suốt ngày đêm chưa?</p>
+                    <p>– Chưa! Chưa một lần nào tôi biến thành một thứ gì khác tôi cả. Suốt đời tôi chỉ là một chiếc lá nhỏ nhoi bình thường.</p>
+                    <p>– Thế thì chán thật! Bông hoa kia đã làm tôi thất vọng. Hoa ơi, bạn chỉ khéo bịa chuyện.</p>
+                    <p>– Tôi không bịa chút nào đâu. Mãi mãi tôi kính trọng những chiếc lá bình thường như thế. Chính nhờ họ mới có chúng tôi – những hoa, những quả, những niềm vui mà bạn vừa nói đến.</p>
+                </div>
+                <div class="story-author">Theo TRẦN HOÀI DƯƠNG</div>
             </div>
         </div>
 
-        <!-- PHẦN BÀI TẬP -->
-        <div class="exercise-card">
-            <div class="ex-title">📝 BÀI TẬP TÌM HIỂU BÀI (Thang điểm 10)</div>
+        <!-- CỘT BÊN PHẢI: BÀI TẬP CHÍNH THỨC -->
+        <div class="right-column">
+            <div class="section-card">
+                <div class="section-title">📊 BÀI TẬP CHÍNH THỨC (Thang điểm 10 Điểm Lá)</div>
+                <form id="quiz-form">
+                    
+                    <!-- CÂU 1 -->
+                    <div class="question-item">
+                        <p><b>1. Vì sao chim sâu muốn biết về cuộc đời của chiếc lá?</b></p>
+                        <label><input type="radio" name="q1" value="a"> a) Vì chim sâu thấy chiếc lá rất đẹp.</label>
+                        <label><input type="radio" name="q1" value="b"> b) Vì chim sâu thấy bông hoa rất biết ơn chiếc lá.</label>
+                        <label><input type="radio" name="q1" value="c"> c) Vì chim sâu thấy chiếc lá muốn giấu bí mật.</label>
+                        <label><input type="radio" name="q1" value="d"> d) Vì chim sâu thấy bác gió kể nhiều về chiếc lá.</label>
+                    </div>
 
-            <div class="question-block">
-                <p><strong>1. Vì sao chim sâu muốn biết về cuộc đời của chiếc lá?</strong></p>
-                <label><input type="radio" name="q1"> a) Vì chim sâu thấy chiếc lá rất đẹp.</label><br>
-                <label><input type="radio" name="q1"> b) Vì chim sâu thấy bông hoa rất biết ơn chiếc lá.</label><br>
-                <label><input type="radio" name="q1"> c) Vì chim sâu thấy chiếc lá muốn giấu bí mật.</label><br>
-                <label><input type="radio" name="q1"> d) Vì chim sâu thấy bác gió kể nhiều về chiếc lá.</label>
+                    <!-- CÂU 2 -->
+                    <div class="question-item">
+                        <p><b>2. Cuộc đời của chiếc lá diễn ra thế nào?</b></p>
+                        <label><input type="radio" name="q2" value="a"> a) Từ một búp non lớn dần thành chiếc lá và cứ là chiếc lá như thế mãi.</label>
+                        <label><input type="radio" name="q2" value="b"> b) Từ một búp non lớn dần thành chiếc lá rồi thành hoa, thành quả.</label>
+                        <label><input type="radio" name="q2" value="c"> c) Từ một búp non lớn dần thành chiếc lá rồi thành ông Mặt Trời.</label>
+                        <label><input type="radio" name="q2" value="d"> d) Từ một búp non lớn dần thành chiếc lá rồi thành ngôi sao.</label>
+                    </div>
+
+                    <!-- CÂU 3 -->
+                    <div class="question-item">
+                        <p><b>3. Vì sao bông hoa biết ơn chiếc lá?</b></p>
+                        <label><input type="radio" name="q3" value="a"> a) Vì chiếc lá rất đẹp.</label>
+                        <label><input type="radio" name="q3" value="b"> b) Vì chiếc lá rất nhỏ nhoi, bình thường.</label>
+                        <label><input type="radio" name="q3" value="c"> c) Vì nhờ có lá mới có hoa, quả, đem lại niềm vui cho mọi người.</label>
+                        <label><input type="radio" name="q3" value="d"> d) Vì chiếc lá từng biến thành ông Mặt Trời, đem lại niềm vui cho mọi người.</label>
+                    </div>
+
+                    <!-- CÂU 4 -->
+                    <div class="question-item">
+                        <p><b>4. Câu chuyện trên muốn nói với em điều gì? (Đánh dấu ✓ vào ý em thích):</b></p>
+                        <label><input type="radio" name="q4" value="any"> Mỗi người một vẻ, ai cũng đáng quý.</label>
+                        <label><input type="radio" name="q4" value="any"> Mỗi người đều có giá trị riêng của mình.</label>
+                        <label><input type="radio" name="q4" value="any"> Ai có đóng góp cho việc chung đều đáng quý.</label>
+                        <label><input type="radio" name="q4" value="any"> Không nhất thiết phải làm được những việc lớn mới đáng quý.</label>
+                    </div>
+
+                    <button type="button" class="btn-submit" onclick="gradeQuiz()">NỘP BÀI CHẤM ĐIỂM 🍃</button>
+                </form>
             </div>
 
-            <div class="question-block">
-                <p><strong>2. Cuộc đời của chiếc lá diễn ra thế nào?</strong></p>
-                <label><input type="radio" name="q2"> a) Từ một búp non lớn dần thành chiếc lá và cứ là chiếc lá như thế mãi.</label><br>
-                <label><input type="radio" name="q2"> b) Từ một búp non lớn dần thành chiếc lá rồi thành hoa, thành quả.</label><br>
-                <label><input type="radio" name="q2"> c) Từ một búp non lớn dần thành chiếc lá rồi thành ông Mặt Trời.</label><br>
-                <label><input type="radio" name="q2"> d) Từ một búp non lớn dần thành chiếc lá rồi thành ngôi sao.</label>
-            </div>
+            <!-- BÀI TẬP LÀM THÊM (NỘP ÂM THANH KỂ CHUYỆN) -->
+            <div class="section-card extra-card">
+                <div class="section-title">🌸 Bài Tập Làm Thêm (Nhận ngay 2 Hoa 🌸)</div>
+                <p class="extra-desc"><b>Đề bài:</b> Dựa vào 4 bức tranh minh họa dưới đây, các em hãy tập kể lại câu chuyện "Chiếc lá" và ghi âm nộp bài nhé!</p>
 
-            <div class="question-block">
-                <p><strong>3. Vì sao bông hoa biết ơn chiếc lá?</strong></p>
-                <label><input type="radio" name="q3"> a) Vì chiếc lá rất đẹp.</label><br>
-                <label><input type="radio" name="q3"> b) Vì chiếc lá rất nhỏ nhoi, bình thường.</label><br>
-                <label><input type="radio" name="q3"> c) Vì nhờ có lá mới có hoa, quả, đem lại niềm vui cho mọi người.</label><br>
-                <label><input type="radio" name="q3"> d) Vì chiếc lá từng biến thành ông Mặt Trời, đem lại niềm vui cho mọi người.</label>
+                <!-- LƯỚI 4 ẢNH MINH HỌA -->
+                <div class="gallery-grid">
+                    <div class="img-box"><img src="1. chim tò mò.png" alt="Tranh 1"><p>1. Chim mò hỏi</p></div>
+                    <div class="img-box"><img src="2. kể lại .png" alt="Tranh 2"><p>2. Kể lại</p></div>
+                    <div class="img-box"><img src="3. chim thất vọng .png" alt="Tranh 3"><p>3. Chim thất vọng</p></div>
+                    <div class="img-box"><img src="4. hoa lên tiếng.png" alt="Tranh 4"><p>4. Hoa lên tiếng</p></div>
+                </div>
+
+                <!-- KHU VỰC NỘP FILE AUDIO -->
+                <div class="upload-box">
+                    <label for="audio-upload">🎙️ Chọn file ghi âm bài kể chuyện của em (.mp3, .wav, .m4a):</label>
+                    <input type="file" id="audio-upload" accept="audio/*">
+                    <button class="btn-submit btn-flower" onclick="submitAudio()">NỘP BÀI GHI ÂM LẤY 2 HOA 🌸</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- SCRIPT CHẤM ĐIỂM TỰ ĐỘNG -->
+    <script>
+        function gradeQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const q4 = document.querySelector('input[name="q4"]:checked');
+
+            if (!q1 || !q2 || !q3 || !q4) {
+                alert("Em hãy chọn đủ câu trả lời cho cả 4 câu hỏi nhé!");
+                return;
+            }
+
+            if (q1.value === 'b') score += 2.5;
+            if (q2.value === 'a') score += 2.5;
+            if (q3.value === 'c') score += 2.5;
+            if (q4) score += 2.5; // Câu 4 chọn đáp án nào cũng trọn điểm
+
+            document.getElementById('official-score').innerText = score;
+            alert("Chúc mừng em đã hoàn thành bài trắc nghiệm và đạt " + score + " / 10 điểm lá!");
+            checkCompletion();
+        }
+
+        function submitAudio() {
+            const fileInput = document.getElementById('audio-upload');
+            if (fileInput.files.length === 0) {
+                alert("Em hãy chọn file ghi âm giọng đọc của mình trước khi nộp nhé!");
+                return;
+            }
+            document.getElementById('flower-status').innerText = "2 Hoa 🌸 (Đã hoàn thành)";
+            document.getElementById('flower-status').style.color = "#e91e63";
+            alert("Tuyệt vời! Em đã nộp bài ghi âm thành công và nhận được 2 Hoa 🌸!");
+            checkCompletion();
+        }
+
+        function checkCompletion() {
+            const currentScore = document.getElementById('official-score').innerText;
+            const flowerStatus = document.getElementById('flower-status').innerText;
+            if (currentScore > 0 && flowerStatus.includes("2 Hoa")) {
+                document.getElementById('lesson-status').innerText = "Đã hoàn thành xuất sắc! 🎉";
+                document.getElementById('lesson-status').style.color = "#2e7d32";
+            }
+        }
+    </script>
 </body>
 </html>
