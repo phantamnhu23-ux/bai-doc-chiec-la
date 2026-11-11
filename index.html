@@ -9,7 +9,7 @@
 <body>
     <!-- BANNER TIÊU ĐỀ -->
     <header class="main-header">
-        <div class="decor-icons">🌸 🍃 </div>
+        <div class="decor-icons">🌸 🍃 ☀️ 🎈</div>
         <h1>BÀI ĐỌC MỞ RỘNG</h1>
         <div class="grade-badge">LỚP 4</div>
     </header>
@@ -56,43 +56,47 @@
         <!-- CỘT BÊN PHẢI: BÀI TẬP CHÍNH THỨC -->
         <div class="right-column">
             <div class="section-card">
-                <div class="section-title">📊 BÀI TẬP CHÍNH THỨC (Thang điểm 10 Điểm Lá - Chọn ý tùy thích)</div>
+                <div class="section-title">📊 BÀI TẬP CHÍNH THỨC (Thang điểm 10 Điểm Lá)</div>
                 <form id="quiz-form">
                     
-                    <!-- CÂU 1 (HỘP TICK) -->
+                    <!-- CÂU 1 (CHỌN 1 ĐÁP ÁN - RADIO) -->
                     <div class="question-item">
                         <p><b>1. Vì sao chim sâu muốn biết về cuộc đời của chiếc lá?</b></p>
-                        <label><input type="checkbox" name="q1" value="any"> a) Vì chim sâu thấy chiếc lá rất đẹp.</label>
-                        <label><input type="checkbox" name="q1" value="any"> b) Vì chim sâu thấy bông hoa rất biết ơn chiếc lá.</label>
-                        <label><input type="checkbox" name="q1" value="any"> c) Vì chim sâu thấy chiếc lá muốn giấu bí mật.</label>
-                        <label><input type="checkbox" name="q1" value="any"> d) Vì chim sâu thấy bác gió kể nhiều về chiếc lá.</label>
+                        <label><input type="radio" name="q1" value="a"> a) Vì chim sâu thấy chiếc lá rất đẹp.</label>
+                        <label><input type="radio" name="q1" value="b"> b) Vì chim sâu thấy bông hoa rất biết ơn chiếc lá.</label>
+                        <label><input type="radio" name="q1" value="c"> c) Vì chim sâu thấy chiếc lá muốn giấu bí mật.</label>
+                        <label><input type="radio" name="q1" value="d"> d) Vì chim sâu thấy bác gió kể nhiều về chiếc lá.</label>
+                        <div id="feedback-q1" class="feedback-text"></div>
                     </div>
 
-                    <!-- CÂU 2 (HỘP TICK) -->
+                    <!-- CÂU 2 (CHỌN 1 ĐÁP ÁN - RADIO) -->
                     <div class="question-item">
                         <p><b>2. Cuộc đời của chiếc lá diễn ra thế nào?</b></p>
-                        <label><input type="checkbox" name="q2" value="any"> a) Từ một búp non lớn dần thành chiếc lá và cứ là chiếc lá như thế mãi.</label>
-                        <label><input type="checkbox" name="q2" value="any"> b) Từ một búp non lớn dần thành chiếc lá rồi thành hoa, thành quả.</label>
-                        <label><input type="checkbox" name="q2" value="any"> c) Từ một búp non lớn dần thành chiếc lá rồi thành ông Mặt Trời.</label>
-                        <label><input type="checkbox" name="q2" value="any"> d) Từ một búp non lớn dần thành chiếc lá rồi thành ngôi sao.</label>
+                        <label><input type="radio" name="q2" value="a"> a) Từ một búp non lớn dần thành chiếc lá và cứ là chiếc lá như thế mãi.</label>
+                        <label><input type="radio" name="q2" value="b"> b) Từ một búp non lớn dần thành chiếc lá rồi thành hoa, thành quả.</label>
+                        <label><input type="radio" name="q2" value="c"> c) Từ một búp non lớn dần thành chiếc lá rồi thành ông Mặt Trời.</label>
+                        <label><input type="radio" name="q2" value="d"> d) Từ một búp non lớn dần thành chiếc lá rồi thành ngôi sao.</label>
+                        <div id="feedback-q2" class="feedback-text"></div>
                     </div>
 
-                    <!-- CÂU 3 (HỘP TICK) -->
+                    <!-- CÂU 3 (CHỌN 1 ĐÁP ÁN - RADIO) -->
                     <div class="question-item">
                         <p><b>3. Vì sao bông hoa biết ơn chiếc lá?</b></p>
-                        <label><input type="checkbox" name="q3" value="any"> a) Vì chiếc lá rất đẹp.</label>
-                        <label><input type="checkbox" name="q3" value="any"> b) Vì chiếc lá rất nhỏ nhoi, bình thường.</label>
-                        <label><input type="checkbox" name="q3" value="any"> c) Vì nhờ có lá mới có hoa, quả, đem lại niềm vui cho mọi người.</label>
-                        <label><input type="checkbox" name="q3" value="any"> d) Vì chiếc lá từng biến thành ông Mặt Trời, đem lại niềm vui cho mọi người.</label>
+                        <label><input type="radio" name="q3" value="a"> a) Vì chiếc lá rất đẹp.</label>
+                        <label><input type="radio" name="q3" value="b"> b) Vì chiếc lá rất nhỏ nhoi, bình thường.</label>
+                        <label><input type="radio" name="q3" value="c"> c) Vì nhờ có lá mới có hoa, quả, đem lại niềm vui cho mọi người.</label>
+                        <label><input type="radio" name="q3" value="d"> d) Vì chiếc lá từng biến thành ông Mặt Trời, đem lại niềm vui cho mọi người.</label>
+                        <div id="feedback-q3" class="feedback-text"></div>
                     </div>
 
-                    <!-- CÂU 4 (HỘP TICK) -->
+                    <!-- CÂU 4 (TICK CHỌN TÙY Ý - CHECKBOX) -->
                     <div class="question-item">
-                        <p><b>4. Câu chuyện trên muốn nói với em điều gì? (Đánh dấu ✓ vào ý em thích):</b></p>
-                        <label><input type="checkbox" name="q4" value="any"> Mỗi người một vẻ, ai cũng đáng quý.</label>
-                        <label><input type="checkbox" name="q4" value="any"> Mỗi người đều có giá trị riêng của mình.</label>
-                        <label><input type="checkbox" name="q4" value="any"> Ai có đóng góp cho việc chung đều đáng quý.</label>
-                        <label><input type="checkbox" name="q4" value="any"> Không nhất thiết phải làm được những việc lớn mới đáng quý.</label>
+                        <p><b>4. Câu chuyện trên muốn nói với em điều gì? (Đánh dấu ✓ vào các ý em thích):</b></p>
+                        <label><input type="checkbox" name="q4" value="opt1"> Mỗi người một vẻ, ai cũng đáng quý.</label>
+                        <label><input type="checkbox" name="q4" value="opt2"> Mỗi người đều có giá trị riêng của mình.</label>
+                        <label><input type="checkbox" name="q4" value="opt3"> Ai có đóng góp cho việc chung đều đáng quý.</label>
+                        <label><input type="checkbox" name="q4" value="opt4"> Không nhất thiết phải làm được những việc lớn mới đáng quý.</label>
+                        <div id="feedback-q4" class="feedback-text"></div>
                     </div>
 
                     <button type="button" class="btn-submit" onclick="gradeQuiz()">NỘP BÀI CHẤM ĐIỂM 🍃</button>
@@ -122,27 +126,68 @@
         </div>
     </div>
 
-    <!-- SCRIPT CHẤM ĐIỂM TỰ ĐỘNG -->
+    <!-- SCRIPT CHẤM ĐIỂM VÀ HIỆN PHẢN HỒI CHI TIẾT -->
     <script>
         function gradeQuiz() {
             let score = 0;
-            const q1 = document.querySelectorAll('input[name="q1"]:checked');
-            const q2 = document.querySelectorAll('input[name="q2"]:checked');
-            const q3 = document.querySelectorAll('input[name="q3"]:checked');
-            const q4 = document.querySelectorAll('input[name="q4"]:checked');
 
-            if (q1.length > 0) score += 2.5;
-            if (q2.length > 0) score += 2.5;
-            if (q3.length > 0) score += 2.5;
-            if (q4.length > 0) score += 2.5;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const q4Checked = document.querySelectorAll('input[name="q4"]:checked');
 
-            if (score === 0) {
-                alert("Em hãy tích chọn ít nhất một ý cho các câu hỏi nhé!");
+            if (!q1 || !q2 || !q3) {
+                alert("Em hãy trả lời đầy đủ các câu 1, 2, 3 nhé!");
+                return;
+            }
+
+            // Chấm điểm và phản hồi Câu 1 (Đúng là b)
+            let fb1 = document.getElementById('feedback-q1');
+            if (q1.value === 'b') {
+                score += 2.5;
+                fb1.innerHTML = "✅ Chính xác! (+2.5 điểm)";
+                fb1.style.color = "green";
+            } else {
+                fb1.innerHTML = "❌ Chưa đúng. Đáp án đúng là: b) Vì chim sâu thấy bông hoa rất biết ơn chiếc lá.";
+                fb1.style.color = "red";
+            }
+
+            // Chấm điểm và phản hồi Câu 2 (Đúng là a)
+            let fb2 = document.getElementById('feedback-q2');
+            if (q2.value === 'a') {
+                score += 2.5;
+                fb2.innerHTML = "✅ Chính xác! (+2.5 điểm)";
+                fb2.style.color = "green";
+            } else {
+                fb2.innerHTML = "❌ Chưa đúng. Đáp án đúng là: a) Từ một búp non lớn dần thành chiếc lá và cứ là chiếc lá như thế mãi.";
+                fb2.style.color = "red";
+            }
+
+            // Chấm điểm và phản hồi Câu 3 (Đúng là c)
+            let fb3 = document.getElementById('feedback-q3');
+            if (q3.value === 'c') {
+                score += 2.5;
+                fb3.innerHTML = "✅ Chính xác! (+2.5 điểm)";
+                fb3.style.color = "green";
+            } else {
+                fb3.innerHTML = "❌ Chưa đúng. Đáp án đúng là: c) Vì nhờ có lá mới có hoa, quả, đem lại niềm vui cho mọi người.";
+                fb3.style.color = "red";
+            }
+
+            // Chấm điểm và phản hồi Câu 4 (Chọn ý nào cũng được điểm)
+            let fb4 = document.getElementById('feedback-q4');
+            if (q4Checked.length > 0) {
+                score += 2.5;
+                fb4.innerHTML = "✅ Rất tốt! Tất cả các ý em chọn đều đúng và có ý nghĩa (+2.5 điểm)";
+                fb4.style.color = "green";
+            } else {
+                fb4.innerHTML = "⚠️ Em hãy chọn ít nhất một ý ở câu số 4 nhé!";
+                fb4.style.color = "#e65100";
                 return;
             }
 
             document.getElementById('official-score').innerText = score;
-            alert("Chúc mừng em đã hoàn thành bài trắc nghiệm và đạt " + score + " / 10 điểm lá!");
+            alert("Em đã nộp bài thành công! Tổng điểm: " + score + " / 10 điểm lá.");
             checkCompletion();
         }
 
